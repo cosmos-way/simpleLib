@@ -23,6 +23,8 @@ public class Book implements Serializable {
     private String publisher;
     private String author;
     private String isbn;
+    private String imageURLlarg;
+    private int yearOfPublication;
 
     @Temporal(TemporalType.DATE)
     private Date publishDate;
@@ -93,19 +95,19 @@ public class Book implements Serializable {
     }
 
     public String getCoverPicFileName() {
-        return coverPicFileName;
+        return "";
     }
 
     public void setCoverPicFileName(String coverPicFileName) {
-        this.coverPicFileName = coverPicFileName;
+
     }
 
     public double getPrice() {
-        return price;
+        return 0;
     }
 
     public void setPrice(double price) {
-        this.price = price;
+
     }
 
     public List<BookReview> getReviews() {
@@ -150,5 +152,21 @@ public class Book implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getImageURLlarg() {
+        return imageURLlarg;
+    }
+
+    public void setImageURLlarg(String imageURLlarg) {
+        this.imageURLlarg = imageURLlarg;
+    }
+
+    public int getYearOfPublication() {
+        return yearOfPublication;
+    }
+
+    public void setYearOfPublication(int yearOfPublication) {
+        this.yearOfPublication = yearOfPublication;
     }
 }

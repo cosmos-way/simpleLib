@@ -4,35 +4,7 @@
     <div class="container">
         <h3 class="like text-center">Featured books</h3>
 
-        <ul id="flexiselDemo3">
 
-            <c:forEach items="${featuredBooks}" var="book">
-                <li><a href="/single/${book.id}"><img src="/resources/images/book_covers/${book.coverPicFileName}"
-                                                      class="img-responsive"
-                                                      style="margin: auto; width: auto; height: 300px; " alt=""/></a>
-
-                    <div class="product liked-product simpleCart_shelfItem">
-                        <a class="like_name" href="/single/${book.id}">${book.title}</a>
-
-                        <form action="/order/addItem" method="post">
-                            <input type="hidden" name="bookId" value="${book.id}">
-                            <input type="hidden" name="txtUrl" value="">
-                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                            <input type="hidden" class="item_quantity" name="bookQuantity" value="1">
-                            <sec:authorize access="isAuthenticated()">
-                                <p><a class="item_add" href="#" onclick="postToDbCart2();">
-                                    <i></i><span class="item_price">${book.price}$</span></a></p>
-                            </sec:authorize>
-                            <sec:authorize access="isAnonymous()">
-                                <p><a href="/login">
-                                    <i></i><span class="item_price">${book.price}$</span></a></p>
-                            </sec:authorize>
-
-                        </form>
-                    </div>
-                </li>
-            </c:forEach>
-        </ul>
 
         <script type="text/javascript">
             $(window).load(function () {

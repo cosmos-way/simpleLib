@@ -1,8 +1,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
-<!DOCTYPE html>
+<%request.setCharacterEncoding("UTF-8");%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script>
         function postToDbCart() {
             document.activeElement.parentElement.submit();
@@ -77,14 +80,12 @@
             <div class="header-right">
                 <div class="cart box_1">
                     <a href="/checkout">
-                        <h3><span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity"
-                                                                                 class="simpleCart_quantity"> 0 </span>)<img
-                                src="../images/bag.png" alt=""></h3>
+                        <h3><span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> | <img src="../images/bag.png" alt=""></h3>
                     </a>
 
                     <form action="/checkout/empty" method="post" style="float: right; ">
                         <input type="hidden" name="txtUrl" value="">
-                        <p><a href="#" id="emptyCart" class="simpleCart_empty" onclick="postToDbCart2()">Empty cart</a></p>
+                        <p><a href="#" id="emptyCart" class="simpleCart_empty" onclick="postToDbCart2()">Очистить заказ</a></p>
                     </form>
 
                     <div class="clearfix"></div>
@@ -114,11 +115,28 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="/index">HOME</a></li>
-                        <li><a href="/contact">CONTACT</a></li>
+                        <li><a href="/index">Главная</a></li>
+                        <li><a href="/contact">Контакты</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
 </div>
+    <div class="news-letter">
+    <div class="container">
+    <div class="join">
+    <h6>SEARCH</h6>
+
+    <div class="sub-left-right">
+    <form action="/search" method="get">
+    <input type="text" name="q" value="Enter Book Name Or Book Author Here"
+    onfocus="this.value = '';"
+    onblur="if (this.value == '') {this.value = 'Enter Book Name Or Author Here';}"/>
+    <input type="submit" value="SEARCH"/>
+    </form>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    </div>
+    </div>

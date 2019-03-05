@@ -46,8 +46,8 @@
             <div class="col-md-5 zoom-grid">
                 <div class="flexslider">
                     <ul class="slides">
-                        <li data-thumb="/images/book_covers/${book.coverPicFileName}">
-                            <div class="thumb-image"><img src="../images/book_covers/${book.coverPicFileName}"
+                        <li data-thumb="${book.imageURLlarg}">
+                            <div class="thumb-image"><img src="${book.imageURLlarg}"
                                                           class="img-responsive" alt=""/></div>
                         </li>
                     </ul>
@@ -75,9 +75,9 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="span span1">
-                    <p class="left">PUBLISH DATE</p>
+                    <p class="left">PUBLISH YEAR</p>
 
-                    <p class="right crop">${book.publishDate}</p>
+                    <p class="right crop">${book.yearOfPublication}</p>
 
                     <div class="clearfix"></div>
                 </div>
@@ -88,28 +88,20 @@
 
                     <div class="clearfix"></div>
                 </div>
-                <div class="span span1">
-                    <p class="left">PAGES</p>
+                <%--<div class="span span1">--%>
+                    <%--<p class="left">PAGES</p>--%>
 
-                    <p class="right crop">${book.numOfPages}</p>
+                    <%--<p class="right crop">${book.numOfPages}</p>--%>
 
-                    <div class="clearfix"></div>
-                </div>
-                <div class="span span3">
-                    <p class="left">LANGUAGE</p>
+                    <%--<div class="clearfix"></div>--%>
+                <%--</div>--%>
+                <%--<div class="span span3">--%>
+                    <%--<p class="left">LANGUAGE</p>--%>
 
-                    <p class="right crop">${book.language}</p>
+                    <%--<p class="right crop">${book.language}</p>--%>
 
-                    <div class="clearfix"></div>
-                </div>
-                <div class="span span5">
-                    <p class="left">PRICE</p>
-
-                    <p class="right crop">${book.price} $</p>
-
-                    <div class="clearfix"></div>
-
-                </div>
+                    <%--<div class="clearfix"></div>--%>
+                <%--</div>--%>
                 <div class="purchase">
 
                     <div class="simpleCart_shelfItem">
