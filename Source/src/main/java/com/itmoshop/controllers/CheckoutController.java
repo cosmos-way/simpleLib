@@ -1,6 +1,8 @@
 package com.itmoshop.controllers;
 
+import com.itmoshop.data.Account;
 import com.itmoshop.data.Book;
+import com.itmoshop.data.BookRequest;
 import com.itmoshop.data.ItemOrder;
 import com.itmoshop.services.AdminService;
 import com.itmoshop.services.DataService;
@@ -9,7 +11,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -25,10 +30,13 @@ public class CheckoutController {
 
     @RequestMapping(method = RequestMethod.GET)
     public void showOrderCart(
-            @ModelAttribute("currentSessionOrder") ItemOrder itemOrder,
-            Model model) {
-        Map<Book, Integer> orderedBooksMap = processItemOrderMap(itemOrder);
-        model.addAttribute("orderedBooks", orderedBooksMap);
+//            @ModelAttribute("currentSessionOrder") ItemOrder itemOrder,
+            Model model, Principal principal) {
+        String email = principal.getName();
+        Account account = admServ.findAccountByEmail(email);
+        List<BookRequest> requests = account.getRequests();
+        ArrayList<BookRequest> newRequests = new ArrayList<>(requests);
+        model.addAttribute("reqestedBooks", newRequests);
     }
 
     @RequestMapping(value = "/delItem", method = RequestMethod.POST)
@@ -78,9 +86,15 @@ public class CheckoutController {
 
     private Map<Book, Integer> processItemOrderMap(ItemOrder currentSessionOrder) {
         Map<Book, Integer> orderedBooksMap = new HashMap<>();
-        Map<Long, Integer> orderedBookIdsMap = currentSessionOrder.getOrderedBooks();
-        populateBooksMapByBookIds(orderedBooksMap, orderedBookIdsMap);
+        //Map<Long, Integer> orderedBookIdsMap = currentSessionOrder.getOrderedBooks();
+        //populateBooksMapByBookIds(orderedBooksMap, orderedBookIdsMap);
         return orderedBooksMap;
+    }
+
+    private List<BookRequest> processBookRequestMap(String email) {
+        Account account = admServ.findAccountByEmail(email);
+        List<BookRequest> requests = account.getRequests();
+        return requests;
     }
 
     private void populateBooksMapByBookIds(Map<Book, Integer> orderedBooksMap, Map<Long, Integer> orderedBookIdsMap) {

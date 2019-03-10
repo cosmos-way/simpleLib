@@ -123,13 +123,11 @@
                             <input type="hidden" id="txtUrl" name="txtUrl" value=""/>
                             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
                             <script>document.getElementById('txtUrl').value = window.location.href;</script>
-                            <label>Quantity, pcs: </label><input type="text" class="item_quantity" name="bookQuantity"
-                                                                 value="1">
                             <sec:authorize access="isAnonymous()">
-                                <input type="button" value="Purchase" onclick="redirectLogin()">
+                                <input  type="button" value="Заказать" onclick="redirectLogin()">
                             </sec:authorize>
                             <sec:authorize access="isAuthenticated()">
-                                <input type="button" value="Purchase" name=name onclick="addToJsCart(); postToDbCart();">
+                                <input type="button" value="Заказать" name=name onclick="addToJsCart(); postToDbCart();">
                             </sec:authorize>
 
                         </form>
@@ -143,12 +141,12 @@
                         </sec:authorize>
 
                     </div>
-                    <div class="social-icons">
-                        <ul>
-                            <li><a class="facebook1" href="https://ru-ru.facebook.com/spbifmo/"></a></li>
-                            <li><a class="twitter1" href="https://twitter.com/spbifmo"></a></li>
-                        </ul>
-                    </div>
+                    <%--<div class="social-icons">--%>
+                        <%--<ul>--%>
+                            <%--<li><a class="facebook1" href="https://ru-ru.facebook.com/spbifmo/"></a></li>--%>
+                            <%--<li><a class="twitter1" href="https://twitter.com/spbifmo"></a></li>--%>
+                        <%--</ul>--%>
+                    <%--</div>--%>
                     <div class="clearfix"></div>
                 </div>
 
@@ -165,60 +163,60 @@
             </div>
             <div class="clearfix"></div>
 
-            <div class="reviews-tabs">
+            <%--<div class="reviews-tabs">--%>
 
-                <ul class="nav nav-tabs responsive hidden-xs hidden-sm" id="myTab">
-                    <li class="test-class active"><a class="deco-none misc-class" href="#how-to">Description</a>
-                    </li>
-                    <li class="test-class"><a class="deco-none" href="#source">Reviews (${bookReviews.size()})</a></li>
-                </ul>
+                <%--<ul class="nav nav-tabs responsive hidden-xs hidden-sm" id="myTab">--%>
+                    <%--<li class="test-class active"><a class="deco-none misc-class" href="#how-to">Description</a>--%>
+                    <%--</li>--%>
+                    <%--<li class="test-class"><a class="deco-none" href="#source">Reviews (${bookReviews.size()})</a></li>--%>
+                <%--</ul>--%>
 
-                <div class="tab-content responsive hidden-xs hidden-sm">
-                    <div class="tab-pane active" id="how-to">
-                        <p class="tab-text">${book.description}</p>
-                    </div>
-                    <div class="tab-pane" id="source">
-                        <div class="response">
-                            <c:forEach items="${bookReviews}" var="bookReview">
-                                <div class="media response-info">
-                                    <div class="media-left response-text-left">
-                                        <h5><a href="#"
-                                               style="pointer-events: none; cursor: default; word-wrap: normal">
-                                                ${bookReview.posterUsername}
-                                        </a></h5>
-                                    </div>
-                                    <div class="media-body response-text-right">
-                                        <p>${bookReview.reviewText}</p>
-                                        <ul>
-                                            <li>${bookReview.reviewDate}</li>
-                                        </ul>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </c:forEach>
-                        </div>
-                        <div class="media response-info">
-                            <div class="media-left response-text-left">
-                                <h5><a href="#"></a></h5>
-                            </div>
-                            <div class="media-body response-text-right">
-                                <textarea form="reviewForm" name="bookReviewText" maxlength="500" rows="4"
-                                          style="width: 100%"></textarea>
+                <%--<div class="tab-content responsive hidden-xs hidden-sm">--%>
+                    <%--<div class="tab-pane active" id="how-to">--%>
+                        <%--<p class="tab-text">${book.description}</p>--%>
+                    <%--</div>--%>
+                    <%--<div class="tab-pane" id="source">--%>
+                        <%--<div class="response">--%>
+                            <%--<c:forEach items="${bookReviews}" var="bookReview">--%>
+                                <%--<div class="media response-info">--%>
+                                    <%--<div class="media-left response-text-left">--%>
+                                        <%--<h5><a href="#"--%>
+                                               <%--style="pointer-events: none; cursor: default; word-wrap: normal">--%>
+                                                <%--${bookReview.posterUsername}--%>
+                                        <%--</a></h5>--%>
+                                    <%--</div>--%>
+                                    <%--<div class="media-body response-text-right">--%>
+                                        <%--<p>${bookReview.reviewText}</p>--%>
+                                        <%--<ul>--%>
+                                            <%--<li>${bookReview.reviewDate}</li>--%>
+                                        <%--</ul>--%>
+                                    <%--</div>--%>
+                                    <%--<div class="clearfix"></div>--%>
+                                <%--</div>--%>
+                                <%--<div class="clearfix"></div>--%>
+                            <%--</c:forEach>--%>
+                        <%--</div>--%>
+                        <%--<div class="media response-info">--%>
+                            <%--<div class="media-left response-text-left">--%>
+                                <%--<h5><a href="#"></a></h5>--%>
+                            <%--</div>--%>
+                            <%--<div class="media-body response-text-right">--%>
+                                <%--<textarea form="reviewForm" name="bookReviewText" maxlength="500" rows="4"--%>
+                                          <%--style="width: 100%"></textarea>--%>
 
-                                <form id="reviewForm" action="/single/add" method="post">
-                                    <input type="hidden" name="bookId" value="${book.id}">
-                                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                                    <input type="submit" value="Add review">
-                                </form>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="clearfix"></div>
+                                <%--<form id="reviewForm" action="/single/add" method="post">--%>
+                                    <%--<input type="hidden" name="bookId" value="${book.id}">--%>
+                                    <%--<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>--%>
+                                    <%--<input type="submit" value="Add review">--%>
+                                <%--</form>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix"></div>--%>
+                        <%--</div>--%>
+                        <%--<div class="clearfix"></div>--%>
 
-                    </div>
-                </div>
-            </div>
+                    <%--</div>--%>
+                <%--</div>--%>
+            <%--</div>--%>
         </div>
     </div>
 

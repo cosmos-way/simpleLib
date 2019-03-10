@@ -24,6 +24,24 @@ public class Book implements Serializable {
     private String author;
     private String isbn;
     private String imageURLlarg;
+    private String imageURLmedium;
+
+    public String getImageURLmedium() {
+        return imageURLmedium;
+    }
+
+    public void setImageURLmedium(String imageURLmedium) {
+        this.imageURLmedium = imageURLmedium;
+    }
+
+    public List<BookRequest> getRequests() {
+        return requests;
+    }
+
+    public void setRequests(List<BookRequest> requests) {
+        this.requests = requests;
+    }
+
     private int yearOfPublication;
 
     @Temporal(TemporalType.DATE)
@@ -33,6 +51,9 @@ public class Book implements Serializable {
 
     @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<BookReview> reviews = new ArrayList<>();
+
+    @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private List<BookRequest> requests = new ArrayList<>();
 
     @Column(columnDefinition = "text")
     private String description;

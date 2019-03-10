@@ -2,7 +2,9 @@ package com.itmoshop.data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -25,6 +27,17 @@ public class Account implements Serializable {
             inverseJoinColumns = {@JoinColumn(name = "order_id", referencedColumnName = "id")}
     )
     private Set<ItemOrder> ordersSet = new HashSet<>();
+
+    @OneToMany(mappedBy = "account", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private List<BookRequest> requests = new ArrayList<>();
+
+    public List<BookRequest> getRequests() {
+        return requests;
+    }
+
+    public void setRequests(List<BookRequest> requests) {
+        this.requests = requests;
+    }
 
     public Account() {
     }

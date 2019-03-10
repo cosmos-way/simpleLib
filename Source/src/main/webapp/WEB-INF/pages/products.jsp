@@ -46,12 +46,13 @@
                 <ul>
                     <c:forEach items="${booksFound}" var="book">
                     <li>
-                        <a class="cbp-vm-image" href="/single/${book.id}">
+
                             <div class="simpleCart_shelfItem">
                                 <div class="view view-first">
+                                    <a class="cbp-vm-image" href="/single/${book.id}">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/resources/images/book_covers/${book.coverPicFileName}"
+                                            <img src="${book.imageURLmedium}"
                                                  class="img-responsive" style="width: auto; height: 200px; " alt=""/>
 
                                             <div class="mask">
@@ -65,36 +66,22 @@
                                                           text-overflow: ellipsis;">${book.title}</p>
                                                 </div>
 
-                                                <div class="pricey"><span class="item_price">${book.price}$</span></div>
-
                                                 <div class="clearfix"></div>
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
-                        </a>
+
 
                         <div class="cbp-vm-details" style="width: 250px;
                                                           white-space: nowrap;
                                                           overflow: hidden;
                                                           text-overflow: ellipsis;">
-                                ${book.description}
+                                ${book.author}
                         </div>
-
-                        <form action="/order/addItem" method="post">
-                            <input type="hidden" name="bookId" value="${book.id}">
-                            <input type="hidden" name="txtUrl" value="">
-                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                            <input type="hidden" class="item_quantity" name="bookQuantity" value="1">
-                            <sec:authorize access="isAnonymous()">
-                                <a class="cbp-vm-icon cbp-vm-add" href="/login">Add to cart</a>
-                            </sec:authorize>
-                            <sec:authorize access="isAuthenticated()">
-                            <a class="cbp-vm-icon cbp-vm-add item_add" href="#" onclick="postToDbCart();">Add to
-                                cart</a>
-                            </sec:authorize>
-                        </form>
-            </div>
+                    </div>
+                        </a>
             </li>
             </c:forEach>
             </ul>

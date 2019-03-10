@@ -27,6 +27,8 @@
                 <div class="reg">
                     <p>Add one book manually</p>
 
+
+
                     <c:if test="${addedBookId != null}">
                         <p>Book was successfully added with id #${addedBookId},
                             <a href="/single/${addedBookId}">visit book page</a></p>

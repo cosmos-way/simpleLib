@@ -52,8 +52,8 @@
             <div class="header-top-left">
                 <ul>
                     <sec:authorize access="isAnonymous()">
-                        <li><a href="/login"><span class="glyphicon glyphicon-user"> </span>Login</a></li>
-                        <li><a href="/register"><span class="glyphicon glyphicon-lock"> </span>Create an Account</a>
+                        <li><a href="/login"><span class="glyphicon glyphicon-user"> </span>Войти</a></li>
+                        <li><a href="/register"><span class="glyphicon glyphicon-lock"> </span>Зарегистрироваться</a>
                         </li>
                     </sec:authorize>
                     <sec:authorize access="isAuthenticated()">
@@ -61,16 +61,21 @@
                             <a href="/account"><span class="glyphicon glyphicon-user"> </span>
                                 <sec:authentication property="principal.username"/></a>
                         </li>
-                        <sec:authorize access="hasRole('ROLE_ADMIN')">
+                        <sec:authorize access="hasRole('ADMIN')">
                             <li>
                                 <a href="/admin"><span class="glyphicon glyphicon-lock"> </span>Admin</a>
+                            </li>
+                        </sec:authorize>
+                        <sec:authorize access="hasAnyRole('ADMIN', 'STAFF')">
+                            <li>
+                                <a href="/admin"><span class="glyphicon glyphicon-lock"> </span>Управление библиотекой</a>
                             </li>
                         </sec:authorize>
                         <li>
                             <form action="/checkout/empty" method="post">
                                 <a href="/logout" onclick="emptyCart()">
                                     <span class="glyphicon glyphicon-lock"> </span>
-                                    Logout
+                                    Выйти
                                 </a>
                             </form>
                         </li>
@@ -109,7 +114,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="logo">
-                        <h1><a href="/index"><span>IT</span> -Shop</a></h1>
+                        <h1><a href="/index">Simple library system</a></h1>
                     </div>
                 </div>
 
@@ -124,19 +129,19 @@
     </div>
 </div>
     <div class="news-letter">
-    <div class="container">
-    <div class="join">
-    <h6>SEARCH</h6>
+        <div class="container">
+            <div class="join">
+            <h6>Поиск</h6>
 
-    <div class="sub-left-right">
-    <form action="/search" method="get">
-    <input type="text" name="q" value="Enter Book Name Or Book Author Here"
-    onfocus="this.value = '';"
-    onblur="if (this.value == '') {this.value = 'Enter Book Name Or Author Here';}"/>
-    <input type="submit" value="SEARCH"/>
-    </form>
-    </div>
-    <div class="clearfix"></div>
-    </div>
-    </div>
+            <div class="sub-left-right">
+            <form action="/search" method="get">
+            <input type="text" name="q" value="Введите название книги, автора или ISBN"
+            onfocus="this.value = '';"
+            onblur="if (this.value == '') {this.value = 'Enter Book Name Or Author Here';}"/>
+            <input type="submit" value="Найти"/>
+            </form>
+            </div>
+            <div class="clearfix"></div>
+            </div>
+        </div>
     </div>

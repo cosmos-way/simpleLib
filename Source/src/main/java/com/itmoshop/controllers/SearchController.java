@@ -22,12 +22,12 @@ public class SearchController {
     public String findBooks(Model model,
             @RequestParam("q") String searchCriteria) {
         List<Book> booksFound = dataServ.findBooksByTitleOrAuthorOrPublisher(searchCriteria);
-        List<Book> featuredBooks = dataServ.findRandomBooks(8);
-        List<Integer> booksPublishDates = dataServ.findYearsOfBooks();
+//        List<Book> featuredBooks = dataServ.findRandomBooks(8);
+//        List<Integer> booksPublishDates = dataServ.findYearsOfBooks();
 
-        model.addAttribute("featuredBooks", featuredBooks);
+        //model.addAttribute("featuredBooks", featuredBooks);
         model.addAttribute("booksFound", booksFound);
-        model.addAttribute("booksPublishDates", booksPublishDates);
+        //model.addAttribute("booksPublishDates", booksPublishDates);
         return "products";
     }
 }

@@ -1,11 +1,10 @@
 package com.itmoshop.services;
 
-import com.itmoshop.data.Account;
-import com.itmoshop.data.Book;
-import com.itmoshop.data.ItemOrder;
+import com.itmoshop.data.*;
 import com.itmoshop.persistence.AccountDAO;
 import com.itmoshop.persistence.BookDAO;
 import com.itmoshop.persistence.ItemOrderDAO;
+import com.itmoshop.persistence.RequestDAO;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
@@ -33,6 +32,8 @@ public class AdminService {
     private BookDAO bookDAO;
     @Autowired
     private ItemOrderDAO itemOrderDAO;
+    @Autowired
+    private RequestDAO requestDAO;
 
     private static final String IMG_FOLDER_PATH =
             File.separator + "resources" + File.separator + "images" + File.separator + "book_covers";
@@ -65,6 +66,10 @@ public class AdminService {
 
     public ItemOrder findItemOrderById(long id) {
         return itemOrderDAO.findItemOrderById(id);
+    }
+
+    public BookRequest findRequestById(long id) {
+        return requestDAO.findRequestById(id);
     }
 
     public void addSingleBookImgToServer(MultipartFile bookImgFile) {
@@ -158,5 +163,8 @@ public class AdminService {
     public int deleteAllItemOrders() {
         return itemOrderDAO.deleteAllItemOrders();
     }
+
+    @Transactional
+    public BookRequest saveRequest(BookRequest req) {return requestDAO.saveRequest(req);}
 
 }

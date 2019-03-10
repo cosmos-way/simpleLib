@@ -4,6 +4,7 @@
 
 <jsp:useBean id="currentSessionOrder" class="com.itmoshop.data.ItemOrder" scope="session"/>
 <jsp:useBean id="orderedBooks" class="java.util.HashMap" scope="request"/>
+<jsp:useBean id="reqestedBooks" class="java.util.ArrayList" scope="request"/>
 
 <!-- checkout -->
 
@@ -27,10 +28,10 @@
             </ul>
             <div class="clearfix"></div>
         </div>
-        <h2>MY SHOPPING CART (<%=orderedBooks.size()%>)</h2>
+        <h2>MY SHOPPING CART (<%=reqestedBooks.size()%>)</h2>
 
         <div class="cart-gd">
-            <c:forEach items="${orderedBooks}" var="orderedBook" varStatus="bookCount">
+            <c:forEach items="${reqestedBooks}" var="orderedBook" varStatus="bookCount">
                 <div class="simpleCart_shelfItem">
                     <span hidden class="item_price">${orderedBook.key.price}</span>
                     <span hidden class="item_quantity">-${orderedBook.value}</span>
