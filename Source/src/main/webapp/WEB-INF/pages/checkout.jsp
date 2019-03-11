@@ -31,31 +31,32 @@
         <h2>MY SHOPPING CART (<%=reqestedBooks.size()%>)</h2>
 
         <div class="cart-gd">
-            <c:forEach items="${reqestedBooks}" var="orderedBook" varStatus="bookCount">
+            <c:forEach items="${reqestedBooks}" var="reqestedBooks" varStatus="bookCount">
                 <div class="simpleCart_shelfItem">
-                    <span hidden class="item_price">${orderedBook.key.price}</span>
-                    <span hidden class="item_quantity">-${orderedBook.value}</span>
-                    <a hidden id="del${orderedBook.key.id}Item" href="#" class="item_add"></a>
+                    <%--<span hidden class="item_price">${orderedBook.key.price}</span>--%>
+                    <%--<span hidden class="item_quantity">-${orderedBook.value}</span>--%>
+                    <%--<a hidden id="del${orderedBook.key.id}Item" href="#" class="item_add"></a>--%>
                 </div>
+                <p>${bookCount.count}</p>
                 <div class="cart-header${bookCount.count}">
                     <div class="cart-sec">
                         <div class="cart-item cyc">
-                            <img src="/images/book_covers/${orderedBook.key.coverPicFileName}" class="img-responsive"
-                                 alt=""
-                                 style="width: auto; height: 250px; position: relative">
+                            <%--<img src="/images/book_covers/${orderedBook.key.coverPicFileName}" class="img-responsive"--%>
+                                 <%--alt=""--%>
+                                 <%--style="width: auto; height: 250px; position: relative">--%>
                         </div>
                         <div class="cart-item-info simpleCart_shelfItem">
-                            <h3><a href="/single/${orderedBook.key.id}"> ${orderedBook.key.title}</a></h3>
+                            <%--<h3><a href="/single/${orderedBook.key.id}"> ${orderedBook.key.title}</a></h3>--%>
 
                             <div class="delivery">
-                                <p>${orderedBook.value} X ${orderedBook.key.price}
-                                    = ${orderedBook.key.price * orderedBook.value} $</p>
+                                <%--<p>${orderedBook.value} X ${orderedBook.key.price}--%>
+                                    <%--= ${orderedBook.key.price * orderedBook.value} $</p>--%>
                                 <span>
                                     <form action="/checkout/delItem" method="post">
-                                        <input type="hidden" name="bookId" id="bookId" value="${orderedBook.key.id}">
+                                        <%--<input type="hidden" name="bookId" id="bookId" value="${orderedBook.key.id}">--%>
                                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                                        <input type="submit" value="Remove Item"
-                                               onclick="deleteItem('del${orderedBook.key.id}Item')">
+                                        <%--<input type="submit" value="Remove Item"--%>
+                                               <%--onclick="deleteItem('del${orderedBook.key.id}Item')">--%>
                                     </form>
                                 </span>
 
@@ -67,13 +68,13 @@
                     </div>
                 </div>
             </c:forEach>
-            <c:if test="${confirmed == null && orderedBooks.size() != 0}">
-                <form action="/checkout/confirm" method="post">
-                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            <%--<c:if test="${confirmed == null && orderedBooks.size() != 0}">--%>
+                <%--<form action="/checkout/confirm" method="post">--%>
+                    <%--<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>--%>
 
-                    <div align="right"><input type="submit" value="Confirm order" onclick="emptyCart()"></div>
-                </form>
-            </c:if>
+                    <%--<div align="right"><input type="submit" value="Confirm order" onclick="emptyCart()"></div>--%>
+                <%--</form>--%>
+            <%--</c:if>--%>
             <c:if test="${confirmed != null}">
                 <p>Thank you!</p>
 

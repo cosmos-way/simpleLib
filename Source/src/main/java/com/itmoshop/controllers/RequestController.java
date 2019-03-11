@@ -1,16 +1,26 @@
 package com.itmoshop.controllers;
 
+import com.google.gson.JsonObject;
 import com.itmoshop.data.*;
 import com.itmoshop.services.AdminService;
 import com.itmoshop.services.DataService;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.security.Principal;
 import java.sql.Timestamp;
 import java.util.*;
+
+
+
+
 
 @Controller
 @RequestMapping("/bookRequest")
@@ -135,5 +145,36 @@ public class RequestController {
         }
     }
 
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    public String getAllRequest(
+            @RequestParam long len,
+            Model model, Principal principal) {
+        String email = principal.getName();
+        Account account = admServ.findAccountByEmail(email);
+        List<BookRequest> requests = account.getRequests();
+        ArrayList<BookRequest> newRequests = new ArrayList<>(requests);
+
+        for(BookRequest req:newRequests)
+        {
+            System.out.println(req);
+        }
+        model.addAttribute("reqestedBooks", newRequests);
+        return "allRequests";
+    }
+
+//
+    @RequestMapping(value = "/requestSaveStatus", method = RequestMethod.POST, produces = "application/json")
+    public @ResponseBody
+    ResponseEntity<?> requestSaveStatus  (
+            @RequestBody BookRequest reqData)  {
+        BookRequest req = admServ.findRequestById(reqData.getId());
+        req.setStatus(reqData.getStatus());
+        admServ.saveRequest(req);
+
+
+        return ResponseEntity.noContent().build();
+    }
 
 }
+
+

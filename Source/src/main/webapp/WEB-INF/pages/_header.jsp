@@ -25,6 +25,7 @@
     </script>
     <title>ITMO Shop</title>
     <link href="../css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
     <script src="../js/jquery.min.js"></script>
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="../css/component.css" rel='stylesheet' type='text/css'/>
@@ -41,6 +42,7 @@
     <script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
 
     <script src="../js/simpleCart.min.js"></script>
+    <script src="../js/notify.js"></script>
 
     <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen"/>
 </head>
