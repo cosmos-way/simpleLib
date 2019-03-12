@@ -167,4 +167,19 @@ public class AdminService {
     @Transactional
     public BookRequest saveRequest(BookRequest req) {return requestDAO.saveRequest(req);}
 
+    @Transactional
+    public List<BookRequest> findRequests(long limit,
+                                          String status,
+                                          long id,
+                                          long userId,
+                                          long bookId,
+                                          String dateFrom,
+                                          String dateTill,
+                                          int expired){
+        return requestDAO.findRequests(limit, status, id, userId, bookId, dateFrom, dateTill, expired);
+    }
+
+    @Transactional
+    public boolean findActiveRequest(long userId,long bookId) { return requestDAO.findActiveRequest(userId, bookId);}
+
 }

@@ -7,30 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b959394-1190-4fff-99d3-ad9541ee9b43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItmoLib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ItmoLib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/classes/com/itmoshop/controllers/CheckoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/classes/com/itmoshop/controllers/CheckoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/classes/com/itmoshop/controllers/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/classes/com/itmoshop/controllers/RequestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/staff/addBook.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/staff/allBooks.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/staff/allRequests.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/staff/request.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/staff/staff.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/vds_war_exploded/WEB-INF/pages/staff/usersList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmoshop/data/RequestStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmoshop/data/RequestStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmoshop/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmoshop/services/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmoshop/services/DataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmoshop/services/DataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addBook.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff/allBooks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allBooks.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff/allRequests.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff/request.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/request.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff/staff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff/usersList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/usersList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itmoshop/controllers/CheckoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itmoshop/controllers/CheckoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itmoshop/controllers/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itmoshop/controllers/RequestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/bag.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/main/java/com/bookshop/utils/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,188 +45,177 @@
     <expand />
     <select />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37361112">
+    <splitter split-orientation="horizontal" split-proportion="0.5079872">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/Book.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#693#694#0" expanded="true" />
-                    <element signature="e#753#754#0" expanded="true" />
-                    <element signature="e#805#806#0" expanded="true" />
-                    <element signature="e#851#852#0" expanded="true" />
-                    <element signature="e#882#883#0" expanded="true" />
-                    <element signature="e#941#942#0" expanded="true" />
-                    <element signature="e#981#982#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/BookRequest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="25" column="25" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/Account.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#1125#1126#0" expanded="true" />
-                    <element signature="e#1156#1157#0" expanded="true" />
-                    <element signature="e#1215#1216#0" expanded="true" />
-                    <element signature="e#1255#1256#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/OrderController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1635">
-                  <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="vertical" split-proportion="0.56657225">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/Book.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="330">
+                      <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+                      <folding>
+                        <element signature="e#693#694#0" expanded="true" />
+                        <element signature="e#753#754#0" expanded="true" />
+                        <element signature="e#805#806#0" expanded="true" />
+                        <element signature="e#851#852#0" expanded="true" />
+                        <element signature="e#882#883#0" expanded="true" />
+                        <element signature="e#941#942#0" expanded="true" />
+                        <element signature="e#981#982#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/BookDAOImpl.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="384">
+                      <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOImpl.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="286">
+                      <caret line="117" column="108" lean-forward="true" selection-start-line="115" selection-start-column="49" selection-end-line="117" selection-end-column="108" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                        <element signature="e#2741#2823#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/OrderController.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="421">
+                      <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/StaffController.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="96">
+                      <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAO.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="285">
+                      <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="55" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/RequestStatus.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="45">
+                      <caret line="3" column="37" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="37" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/ItemOrder.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="750">
-                  <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#1861#1862#0" expanded="true" />
-                    <element signature="e#1896#1897#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/BookDAOImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="649">
-                  <caret line="174" column="49" selection-start-line="174" selection-start-column="49" selection-end-line="174" selection-end-column="49" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#getOrderInfo#0;class#RequestController#0" />
-                    <element signature="method#addItemToCart#0;class#RequestController#0" />
-                    <element signature="e#2111#2149#0" />
-                    <element signature="method#deleteOrder#0;class#RequestController#0" />
-                    <element signature="e#4134#4217#1" />
-                    <element signature="method#processItemOrderMap#0;class#RequestController#0" />
-                    <element signature="method#populateBooksMapByBookIds#0;class#RequestController#0" />
-                    <element signature="e#4799#4982#1" />
-                    <element signature="method#getAllRequest#0;class#RequestController#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3">
-                  <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RestApiController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/checkout.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="75" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/CheckoutController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="605">
-                  <caret line="88" column="68" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="68" />
-                  <folding>
-                    <element signature="e#592#603#0" />
-                    <element signature="method#deleteItemFromOrder#0;class#CheckoutController#0" />
-                    <element signature="method#confirmOrder#0;class#CheckoutController#0" />
-                    <element signature="method#emptyCart#0;class#CheckoutController#0" />
-                    <element signature="method#removeBookFromItemOrder#0;class#CheckoutController#0" />
-                    <element signature="method#processBookRequestMap#0;class#CheckoutController#0" />
-                    <element signature="method#populateBooksMapByBookIds#0;class#CheckoutController#0" />
-                    <element signature="e#4024#4207#1" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="vertical" split-proportion="0.687441">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="251">
+                      <caret line="60" column="74" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="74" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                        <element signature="method#getOrderInfo#0;class#RequestController#0" />
+                        <element signature="method#deleteOrder#0;class#RequestController#0" />
+                        <element signature="method#processItemOrderMap#0;class#RequestController#0" />
+                        <element signature="method#populateBooksMapByBookIds#0;class#RequestController#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="178">
+                      <caret line="174" column="125" lean-forward="true" selection-start-line="174" selection-start-column="125" selection-end-line="174" selection-end-column="125" />
+                      <folding>
+                        <element signature="n#form#0;n#div#0;n#div#0;n#!!top" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/single.jsp">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="180">
+                      <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/services/AdminService.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="609">
+                      <caret line="182" column="117" selection-start-line="182" selection-start-column="117" selection-end-line="182" selection-end-column="117" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                        <element signature="e#2146#2147#0" expanded="true" />
+                        <element signature="e#2199#2200#0" expanded="true" />
+                        <element signature="method#addArchiveContentsToServer#0;class#AdminService#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-84">
+                      <caret line="6" column="27" selection-start-line="5" selection-end-line="6" selection-end-column="27" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-second>
     </splitter>
   </component>
@@ -243,15 +223,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>on orders over</find>
-      <find>addit</find>
       <find>path</find>
       <find>keys</find>
       <find>recentBooks</find>
@@ -280,6 +258,8 @@
       <find>@P</find>
       <find>throws</find>
       <find>orderedBook</find>
+      <find>bootstrap.css.map</find>
+      <find>glyphicon-user</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Tomoko\Desktop\99\.idea</dir>
@@ -293,14 +273,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/bookshop/configuration/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/BeanConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.flexslider.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/data/BookReview.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RestApiController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/MyController.java" />
@@ -317,11 +291,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/persistence_openshift.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/data/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/data/RequestStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/ItemOrderDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/services/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/single.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/data/BookRequest.java" />
@@ -339,11 +309,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/CheckoutController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/checkout.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff/allRequests.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/StaffController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/services/DataService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/data/RequestStatus.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/services/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -385,10 +365,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="134" />
-    <option name="y" value="23" />
-    <option name="width" value="1252" />
-    <option name="height" value="823" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -399,6 +377,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -431,6 +410,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="itmoshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ItmoLib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="itmoshop" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ItmoLib" type="b2602c69:ProjectViewProjectNode" />
@@ -490,7 +478,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ItmoLib" type="b2602c69:ProjectViewProjectNode" />
@@ -513,15 +501,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552306918707" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552349933558" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -545,7 +532,80 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.16">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.16 iMac">
+    <configuration name="Tomcat 9.0.16 iMac" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="vds:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_16_(1)_ItmoLib" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58531" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="vds:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -692,6 +752,7 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.16" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.16 iMac" />
       <item itemvalue="Tomcat Server.Tomcatconst.vds.1" />
     </list>
   </component>
@@ -718,17 +779,18 @@
       <workItem from="1552135188404" duration="23001000" />
       <workItem from="1552251308512" duration="589000" />
       <workItem from="1552253971628" duration="20245000" />
+      <workItem from="1552308113307" duration="1154000" />
+      <workItem from="1552311718933" duration="27840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103963000" />
+    <option name="totallyTimeSpent" value="132957000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" x="127" y="102" width="351" height="801" id="Project" order="0" type="WINDOWED" visible="true" weight="0.22569445" />
+      <window_info content_ui="combo" x="1548" y="110" width="351" height="575" id="Project" order="0" type="WINDOWED" visible="true" weight="0.22569445" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -736,10 +798,10 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3287827" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" x="66" y="373" width="1325" height="521" id="Run" order="3" type="WINDOWED" weight="0.33846155" />
+      <window_info anchor="bottom" x="66" y="373" width="1325" height="521" id="Run" order="3" weight="0.33805478" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -750,7 +812,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Docker" order="14" weight="0.32948717" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" weight="0.32948717" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -809,29 +871,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/КequestController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/MvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/BeanConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/PersistenceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOlmpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/services/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -846,44 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/persistence_local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/single.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/services/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="167" column="27" selection-start-line="167" selection-start-column="27" selection-end-line="167" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2146#2147#0" expanded="true" />
-            <element signature="e#2199#2200#0" expanded="true" />
-            <element signature="method#addArchiveContentsToServer#0;class#AdminService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -894,16 +899,6 @@
           <folding>
             <element signature="method#showBook#0;class#SingleController#0" />
             <element signature="method#removeBook#0;class#SingleController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/ItemOrderDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,16 +921,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/staff/BookController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/request.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -964,13 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/usersList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -978,24 +956,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="181" column="26" lean-forward="true" selection-start-line="5" selection-end-line="181" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/BookDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/services/DataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -1020,22 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding>
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/products.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1050,13 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/BookDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1068,51 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="52" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/ItemOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
-          <folding>
-            <element signature="e#1861#1862#0" expanded="true" />
-            <element signature="e#1896#1897#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/RequestStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1134,29 +1030,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/ItemOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="750">
+          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
           <folding>
-            <element signature="method#admin#0;class#AdminController#0" />
-            <element signature="e#1017#1135#0" />
-            <element signature="e#1167#1269#0" />
-            <element signature="method#addSingleBook#0;class#AdminController#0" />
-            <element signature="method#addManyBooks#0;class#AdminController#0" />
-            <element signature="method#inspectAccount#0;class#AdminController#0" />
-            <element signature="method#inspectOrder#0;class#AdminController#0" />
-            <element signature="method#dropAccounts#0;class#AdminController#0" />
-            <element signature="method#dropBooks#0;class#AdminController#0" />
-            <element signature="method#dropOrders#0;class#AdminController#0" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/persistence_openshift.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/persistence_local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="1001">
           <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="6578" column="1" selection-start-line="6578" selection-start-column="1" selection-end-line="6578" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1169,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/CheckoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="88" column="68" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="68" />
+        <state relative-caret-position="392">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding>
             <element signature="e#592#603#0" />
             <element signature="method#deleteItemFromOrder#0;class#CheckoutController#0" />
@@ -1184,6 +1096,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/services/DataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RestApiController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1194,46 +1113,202 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/BookDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="174" column="49" selection-start-line="174" selection-start-column="49" selection-end-line="174" selection-end-column="49" />
+        <state relative-caret-position="384">
+          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/staff.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="6" column="27" selection-start-line="5" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="78" column="72" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="147" column="99" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="55" column="143" selection-start-line="55" selection-start-column="143" selection-end-line="55" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/single.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="174" column="125" lean-forward="true" selection-start-line="174" selection-start-column="125" selection-end-line="174" selection-end-column="125" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getOrderInfo#0;class#RequestController#0" />
-            <element signature="method#addItemToCart#0;class#RequestController#0" />
-            <element signature="e#2111#2149#0" />
-            <element signature="method#deleteOrder#0;class#RequestController#0" />
-            <element signature="e#4134#4217#1" />
-            <element signature="method#processItemOrderMap#0;class#RequestController#0" />
-            <element signature="method#populateBooksMapByBookIds#0;class#RequestController#0" />
-            <element signature="e#4799#4982#1" />
-            <element signature="method#getAllRequest#0;class#RequestController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/RequestStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1017#1135#0" />
+            <element signature="e#1167#1269#0" />
+            <element signature="method#addSingleBook#0;class#AdminController#0" />
+            <element signature="method#addManyBooks#0;class#AdminController#0" />
+            <element signature="method#inspectAccount#0;class#AdminController#0" />
+            <element signature="method#inspectOrder#0;class#AdminController#0" />
+            <element signature="method#dropAccounts#0;class#AdminController#0" />
+            <element signature="method#dropBooks#0;class#AdminController#0" />
+            <element signature="method#dropOrders#0;class#AdminController#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/BookRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="215">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/allRequests.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/ItemOrderDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
+        <state relative-caret-position="-44">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/configuration/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="181">
+          <caret line="43" column="89" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/data/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/services/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="182" column="117" selection-start-line="182" selection-start-column="117" selection-end-line="182" selection-end-column="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2146#2147#0" expanded="true" />
+            <element signature="e#2199#2200#0" expanded="true" />
+            <element signature="method#addArchiveContentsToServer#0;class#AdminService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/controllers/RequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="60" column="74" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getOrderInfo#0;class#RequestController#0" />
+            <element signature="method#deleteOrder#0;class#RequestController#0" />
+            <element signature="method#processItemOrderMap#0;class#RequestController#0" />
+            <element signature="method#populateBooksMapByBookIds#0;class#RequestController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itmoshop/persistence/RequestDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="117" column="108" lean-forward="true" selection-start-line="115" selection-start-column="49" selection-end-line="117" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2741#2823#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -25,7 +25,7 @@
             <div class="reg-form">
                 <div class="reg">
                     <p>Add one book manually</p>
-                    <a>Добавить книгу</a>
+                    <a href="/bookRequest/all">Добавить книгу</a>
                     <a>Список книг</a>
                     <a href="/bookRequest/all">Запросы на книги</a>
                     <a>Пользователи</a>

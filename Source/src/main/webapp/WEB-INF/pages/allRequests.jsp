@@ -5,25 +5,8 @@
 
 <jsp:useBean id="reqestedBooks" class="java.util.ArrayList" scope="request"/>
 
-<style>
-    table {
-        border-collapse: collapse; /* Убираем двойные линии */
-        width: 100%; /* Ширина таблицы */
-    }
-    th {
-        background: #dfebb7; /* Цвет фона ячейки */
-        text-align: center; /* Выравнивание по левому краю */
-    }
-    td {
-        text-align: center; /* Выравнивание по центру */
-    }
-    th, td {
-        border: 1px solid black; /* Параметры рамки */
-        padding: 4px; /* Поля вокруг текста */
-    }
-</style>
-
 <script type="text/javascript">
+
     function requestSatusSelectChangedAjax(selectObject, requestID) {
         var data = {}
         data["id"] = requestID
@@ -37,9 +20,6 @@
             dataType: 'json',
             timeout: 600000,
             success: function (result) {
-                // $('#ajaxGetUserServletResponse').html("YES!!!!!!!!!!!!!");
-                // alert('At ' + result.time
-                //     + ': ' + result.message);
                 // $.notify(
                 //     "Успешно обновлен статус запроса  "+requestID, "success"
                 // );
@@ -55,72 +35,182 @@
             }
         });
     }
+
+
+    function requestDateTillInputChangedAjax(sObject, requestID) {
+        var data = {}
+        data["id"] = requestID
+        data["dateTill"] = sObject.value
+        $.ajax({
+
+            type: "POST",
+            contentType: "application/json",
+            url: "/bookRequest/requestSaveDateTill",
+            data: JSON.stringify(data),
+            dataType: 'json',
+            timeout: 600000,
+            success: function (result) {
+                $.notify(
+                    "Дата возврата обновлена, запрос "+requestID,
+                    { className:"success" }
+                );
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $('#ajaxGetUserServletResponse').html("No!");
+                alert(jqXHR.status + ' ' + jqXHR.responseText);
+            }
+        });
+    }
+
+    $('#allRequestsFilter').submit(function () {
+        alert("hhh");
+        $(this)
+            .find('input[name]')
+            .filter(function () {
+                return !this.value;
+            })
+            .prop('name', '');
+    });
 </script>
 
-<div id="ajaxGetUserServletResponse"></div>
-<table>
-    <tr>
-        <th>id</th>
-        <th>title</th>
-        <th>author</th>
-        <th>status</th>
-        <th>Время заказа</th>
-        <th>До</th>
-        <th>ФИО</th>
-    </tr>
-    <c:forEach items="${reqestedBooks}" var="request" varStatus="status">
-        <tr>
-            <td>${request.id}</td>
-            <td>${request.book.title}</td>
-            <td>${request.book.author}</td>
-            <td>
-                <select id="select_status_${request.id}" onchange="requestSatusSelectChangedAjax(this,${request.id})">
-                    <option value="ISSUED" ${request.status == "ISSUED" ? 'selected="selected"' : ''}>ВЫДАНО</option>
-                    <option value="ORDERED" ${request.status == "ORDERED" ? 'selected="selected"' : ''}>ЗАКАЗАНО</option>
-                    <option value="ERROR" ${request.status == "ERROR" ? 'selected="selected"' : ''}>ОШИБКА</option>
-                    <option value="DELIVERED" ${request.status == "DELIVERED" ? 'selected="selected"' : ''}>ВЕРНУЛИ</option>
-                    <option value="READY" ${request.status == "READY" ? 'selected="selected"' : ''}>ГОТОВО</option>
-                </select></td>
-            <td>${request.orderDateTime}</td>
-            <td>
-                <div class="input-append date form_datetime">
-                    <input size="16" type="text" value="<fmt:formatDate value="${request.dateTill}" type="date" pattern="yyyy-MM-dd"/>" readonly>
-                    <span class="add-on"><i class="icon-th"></i></span>
+
+<div class="registration-form">
+    <div class="container">
+
+        <form id="allRequestsFilter"  method="get" action="/bookRequest/all" novalidate>
+            <div class="form-row">
+                <div class="col-md-2 mb-5">
+                    <label for="validationCustom01">id книги</label>
+                    <input type="text" class="form-control" id="validationCustom01" name="bookId" value="${param["bookId"]}"  >
                 </div>
+                <div class="col-md-2 mb-5">
+                    <label for="validationCustom02">id запроса</label>
+                    <input type="text" class="form-control" id="validationCustom02" name="id" value="${param["id"]}" >
+                </div>
+                <div class="col-md-2 mb-5">
+                    <label for="validationCustomUsername">id пользователя</label>
+                    <input type="text" class="form-control" id="validationCustomUsername" name="userId"  aria-describedby="inputGroupPrepend" value="${param["userId"]}">
 
-                <script type="text/javascript">
-                    $(".form_datetime").datetimepicker({
-                        format: "dd MM yyyy - hh:ii"
-                    });
-                </script>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <label for="validationCustom03">Статус запроса</label>
 
 
-                <div class="control-group">
-                    <label class="control-label">Date Picking</label>
-                    <div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                        <input size="16" type="text" value="" readonly>
+                    <select class="form-control" id="validationCustom03" name="status">
+                        <option value="">Все</option>
+                        <option value="ISSUED" ${param["status"] == "ISSUED" ? 'selected="selected"' : ''}>ВЫДАНО</option>
+                        <option value="ORDERED" ${param["status"] == "ORDERED" ? 'selected="selected"' : ''}>ЗАКАЗАНО</option>
+                        <option value="ERROR" ${param["status"] == "ERROR" ? 'selected="selected"' : ''}>ОШИБКА</option>
+                        <option value="DELIVERED" ${param["status"] == "DELIVERED" ? 'selected="selected"' : ''}>ВЕРНУЛИ</option>
+                        <option value="READY" ${param["status"] == "READY" ? 'selected="selected"' : ''}>ГОТОВО</option>
+                        <option value="CANCELED" ${param["status"] == "CANCELED" ? 'selected="selected"' : ''}>ОТМЕНЕНО</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationCustom04">Дата заказа</label>
+
+                    <div class="controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <fmt:parseDate value="${param[\"dateFrom\"]}" pattern="yyyy-mm-dd" var="dateFrom"/>
+                        <input name="dateFrom" id="validationCustom04" size="16" type="text" value="<fmt:formatDate value="${dateFrom}" type="date" pattern="yyyy-mm-dd"/>"  readonly>
                         <span class="add-on"><i class="icon-remove"></i></span>
                         <span class="add-on"><i class="icon-th"></i></span>
                     </div>
-                    <input type="hidden" id="dtp_input2" value="" /><br/>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationCustom05">Дата возврата</label>
+
+                    <div class="controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <fmt:parseDate value="${param[\"dateTill\"]}" pattern="yyyy-mm-dd" var="dateTill"/>
+                        <input name="dateTill" id="validationCustom05" size="16" type="text" value="<fmt:formatDate value="${dateTill}" type="date" pattern="yyyy-mm-dd"/>"  readonly>
+                        <span class="add-on"><i class="icon-remove"></i></span>
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+
+                <div class="col-md-5 mb-3">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input name="expired" class="form-check-input" type="checkbox" value="1" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Просрочены
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="limit">Лимит</label>
+                    <input name="limit" type="text" class="form-control" value="${param["limit"]}" id="limit">
+                </div>
+                <div class="col-md-5 mb-3">
+
                 </div>
 
 
-                <%--<input type="date" class="form-control" value="<fmt:formatDate value="${request.dateTill}" type="date" pattern="yyyy-MM-dd"/>"/></td>--%>
-            <td>${request.account.firstName} ${request.account.lastName}</td>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Применить фильтр">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        </form>
 
-        </tr>
-    </c:forEach>
-</table>
+
+
+
+        <table class="table">
+            <tr>
+                <th>id</th>
+                <th>Наименование книги</th>
+                <th>Автор</th>
+                <th>Статус запроса</th>
+                <th>Дата запроса</th>
+                <th>Выдача до</th>
+                <th>Пользователь</th>
+            </tr>
+            <c:forEach items="${reqestedBooks}" var="request" varStatus="status">
+                <tr>
+                    <td>${request.id}</td>
+                    <td>${request.book.title}</td>
+                    <td>${request.book.author}</td>
+                    <td>
+                        <select id="select_status_${request.id}" onchange="requestSatusSelectChangedAjax(this,${request.id})">
+                            <option value="ISSUED" ${request.status == "ISSUED" ? 'selected="selected"' : ''}>ВЫДАНО</option>
+                            <option value="ORDERED" ${request.status == "ORDERED" ? 'selected="selected"' : ''}>ЗАКАЗАНО</option>
+                            <option value="ERROR" ${request.status == "ERROR" ? 'selected="selected"' : ''}>ОШИБКА</option>
+                            <option value="DELIVERED" ${request.status == "DELIVERED" ? 'selected="selected"' : ''}>ВЕРНУЛИ</option>
+                            <option value="READY" ${request.status == "READY" ? 'selected="selected"' : ''}>ГОТОВО</option>
+                            <option value="CANCELED" ${request.status == "CANCELED" ? 'selected="selected"' : ''}>ОТМЕНЕНО</option>
+                        </select></td>
+                    <td>${request.orderDateTime}</td>
+                    <td>
+
+                        <div class="control-group">
+                            <div class="controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <fmt:parseDate value="${request.dateTill}" pattern="yyyy-mm-dd" var="dateTill"/>
+                                <input onchange="requestDateTillInputChangedAjax(this,${request.id})" size="16" type="text" value="<fmt:formatDate value="${dateTill}" type="date" pattern="yyyy-mm-dd"/>"  readonly>
+                                <span class="add-on"><i class="icon-remove"></i></span>
+                                <span class="add-on"><i class="icon-th"></i></span>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" /><br/>
+                        </div>
+
+
+                        <%--<input type="date" class="form-control" value="<fmt:formatDate value="${request.dateTill}" type="date" pattern="yyyy-MM-dd"/>"/></td>--%>
+                    <td>${request.account.firstName} ${request.account.lastName}</td>
+
+                </tr>
+            </c:forEach>
+        </table>
+    </div>
+</div>
 
 <jsp:include page="_footer.jsp"/>
 
 <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-<script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.ru.js" charset="UTF-8"></script>
 <script type="text/javascript">
 
     $('.form_date').datetimepicker({
-        language:  'fr',
+        language:  'ru',
         weekStart: 1,
         todayBtn:  1,
         autoclose: 1,
@@ -131,3 +221,28 @@
     });
 
 </script>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+
+
+</script>
+

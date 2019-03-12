@@ -27,7 +27,7 @@
     <div class="clearfix"></div>
     </div>
         <div class="copyright text-center">
-            <p>Библиотека ИТМО</p>
+            <p>Simple library system | const Ltd</p>
         </div>
     </div>
 </div>

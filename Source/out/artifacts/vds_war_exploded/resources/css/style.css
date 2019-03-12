@@ -2,7 +2,7 @@
 body{
 	padding:0;
 	margin:0;
-	font-family: 'Lato-Regular';
+	font-family: "Open Sans", sans-serif;
 	background:#fff;
 }
 body a{
@@ -13,12 +13,10 @@ body a{
 	-ms-transition:0.5s all;
 }
 @font-face {
-   font-family: 'Lato-Regular';
-   src: url(../fonts/Lato-Regular.ttf)format('truetype');
+    font-family: "Open Sans", sans-serif;
 }
 @font-face {
-   font-family: 'PlayfairDisplay-Regular';
-   src: url(../fonts/PlayfairDisplay-Regular.ttf)format('truetype');
+    font-family: "Open Sans", sans-serif;
 }
 input[type="button"],input[type="submit"]{
 	transition:0.5s all;
@@ -29,7 +27,7 @@ input[type="button"],input[type="submit"]{
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
-	font-family: 'PlayfairDisplay-Regular';
+    font-family: "Open Sans", sans-serif;
 }
 p{
 	margin:0;
@@ -44,7 +42,7 @@ label{
 /*-----start-header----*/
 .header-top-strip{
 	padding:8px 0 14px 0;
-	background-color: #0b5081;
+	background-color: #163ea4;
 }
 .header-top-left ul li {
     display: inline-block;
@@ -55,7 +53,7 @@ label{
 	text-decoration:none;
 	font-size:13px;
 }
-span.glyphicon.glyphicon-user,span.glyphicon.glyphicon-lock {
+span.glyphicon.glyphicon-user,span.glyphicon.glyphicon-lock, span.glyphicon.glyphicon-lock, span.glyphicon.glyphicon-briefcase, span.glyphicon.glyphicon-off {
     font-size: 10px;
     vertical-align: initial;
     margin-right: 6px;

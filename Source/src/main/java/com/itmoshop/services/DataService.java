@@ -1,6 +1,7 @@
 package com.itmoshop.services;
 
 import com.itmoshop.data.Book;
+import com.itmoshop.data.BookRequest;
 import com.itmoshop.data.BookReview;
 import com.itmoshop.persistence.BookDAO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,5 +65,6 @@ public class DataService {
     public void deleteBook(Book book) {
         bookDAO.deleteBook(book);
     }
+
 
 }

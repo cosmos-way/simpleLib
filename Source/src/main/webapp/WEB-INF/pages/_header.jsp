@@ -70,13 +70,13 @@
                         </sec:authorize>
                         <sec:authorize access="hasAnyRole('ADMIN', 'STAFF')">
                             <li>
-                                <a href="/admin"><span class="glyphicon glyphicon-lock"> </span>Управление библиотекой</a>
+                                <a href="/staff"><span class="glyphicon glyphicon-briefcase"> </span>Управление библиотекой</a>
                             </li>
                         </sec:authorize>
                         <li>
                             <form action="/checkout/empty" method="post">
                                 <a href="/logout" onclick="emptyCart()">
-                                    <span class="glyphicon glyphicon-lock"> </span>
+                                    <span class="glyphicon glyphicon-off"> </span>
                                     Выйти
                                 </a>
                             </form>
@@ -86,14 +86,17 @@
             </div>
             <div class="header-right">
                 <div class="cart box_1">
-                    <a href="/checkout">
-                        <h3><span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> | <img src="../images/bag.png" alt=""></h3>
-                    </a>
+                    <sec:authorize access="isAuthenticated()">
+                        <a href="/checkout">
+                            <span class="glyphicon glyphicon-book"> </span> Мои запросы
+                        </a>
+                    </sec:authorize>
 
-                    <form action="/checkout/empty" method="post" style="float: right; ">
-                        <input type="hidden" name="txtUrl" value="">
-                        <p><a href="#" id="emptyCart" class="simpleCart_empty" onclick="postToDbCart2()">Очистить заказ</a></p>
-                    </form>
+
+                    <%--<form action="/checkout/empty" method="post" style="float: right; ">--%>
+                        <%--<input type="hidden" name="txtUrl" value="">--%>
+                        <%--<p><a href="#" id="emptyCart" class="simpleCart_empty" onclick="postToDbCart2()">Очистить заказ</a></p>--%>
+                    <%--</form>--%>
 
                     <div class="clearfix"></div>
                 </div>

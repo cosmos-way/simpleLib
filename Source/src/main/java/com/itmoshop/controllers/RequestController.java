@@ -57,50 +57,27 @@ public class RequestController {
         Account userAccount = admServ.findAccountByEmail(principal.getName());
         Book bookToAdd = dataServ.findBookById(bookId);
 
+        if(admServ.findActiveRequest(userAccount.getId(), bookToAdd.getId()))
+            throw new IllegalArgumentException("Подобный запрос существует");
+
+
         BookRequest req = new BookRequest();
 //        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         req.setOrderDateTime(new Date(System.currentTimeMillis()));
         req.setBook(bookToAdd);
         req.setAccount(userAccount);
         req.setStatus(RequestStatus.ORDERED);
-        req.setDateTill(new Date(System.currentTimeMillis()+24*24*3600));
+
+        Date tillDate = new Date(System.currentTimeMillis());
+        Calendar c = Calendar.getInstance();
+        c.setTime(tillDate);
+        c.add(Calendar.DATE, 14);
+        tillDate = c.getTime();
+
+
+        req.setDateTill(tillDate);
 
         admServ.saveRequest(req);
-//        java.sql.Timestamp.valueOf()
-//        req.setOrderDateTime();
-
-//        ItemOrder ord = new ItemOrder();
-//        admServ.saveOrder()
-
-
-//        Iterator<ItemOrder> itemOrderIterator = userAccount.getOrdersSet().iterator();
-//        boolean match = false;
-//        while (itemOrderIterator.hasNext()) {
-//            ItemOrder next = itemOrderIterator.next();
-//            if (currentSessionOrder.equals(next)) {
-//                currentSessionOrder = next;
-//                match = true;
-//            }
-//        }
-//
-//        if (!match) {
-//            currentSessionOrder = admServ.saveOrder(new ItemOrder());
-//            userAccount.addOrderToOrdersSet(currentSessionOrder);
-//        }
-
-
-//        Map<Long, Integer> orderedBooks = currentSessionOrder.getOrderedBooks();
-//
-//        Integer alreadyOrdered = orderedBooks.get(bookId);
-//        if (alreadyOrdered == null) {
-//            orderedBooks.put(bookId, bookQuantity);
-//        } else {
-//            orderedBooks.put(bookId, bookQuantity + alreadyOrdered);
-//        }
-//
-//        currentSessionOrder.setOrderDateTime(new Date());
-//        currentSessionOrder.setOrderedBooks(orderedBooks);
-//        currentSessionOrder.addToOrderSum(bookToAdd.getPrice(), bookQuantity);
 
         admServ.saveAccount(userAccount);
 
@@ -145,24 +122,41 @@ public class RequestController {
         }
     }
 
-    @RequestMapping(value = "/all", method = RequestMethod.GET)
-    public String getAllRequest(
-            @RequestParam long len,
-            Model model, Principal principal) {
+
+    @RequestMapping(value = "/myRequests", method = RequestMethod.GET)
+    public String myRequests(Model model, Principal principal) {
+
         String email = principal.getName();
         Account account = admServ.findAccountByEmail(email);
         List<BookRequest> requests = account.getRequests();
         ArrayList<BookRequest> newRequests = new ArrayList<>(requests);
-
-        for(BookRequest req:newRequests)
-        {
-            System.out.println(req);
-        }
         model.addAttribute("reqestedBooks", newRequests);
         return "allRequests";
     }
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    public String getAllRequest(
+            @RequestParam(defaultValue = "10") long limit,
+            @RequestParam(defaultValue = "null") String status,
+            @RequestParam(defaultValue = "-1") long id,
+            @RequestParam(defaultValue = "-1") long userId,
+            @RequestParam(defaultValue = "-1") long bookId,
+            @RequestParam(defaultValue = "null") String dateFrom,
+            @RequestParam(defaultValue = "null") String dateTill,
+            @RequestParam(defaultValue = "0") int expired,
+            Model model, Principal principal) {
 
-//
+//        String email = principal.getName();
+//        Account account = admServ.findAccountByEmail(email);
+//        List<BookRequest> requests = account.getRequests();
+//        ArrayList<BookRequest> newRequests = new ArrayList<>(requests);
+
+        List<BookRequest> allRequests = admServ.findRequests(limit, status, id, userId, bookId, dateFrom, dateTill, expired);
+
+        model.addAttribute("reqestedBooks", allRequests);
+        return "allRequests";
+    }
+
+
     @RequestMapping(value = "/requestSaveStatus", method = RequestMethod.POST, produces = "application/json")
     public @ResponseBody
     ResponseEntity<?> requestSaveStatus  (
@@ -171,6 +165,18 @@ public class RequestController {
         req.setStatus(reqData.getStatus());
         admServ.saveRequest(req);
 
+
+        return ResponseEntity.noContent().build();
+    }
+
+    @RequestMapping(value = "/requestSaveDateTill", method = RequestMethod.POST, produces = "application/json")
+    public @ResponseBody
+    ResponseEntity<?> requestSaveDateTill  (
+            @RequestBody BookRequest reqData)  {
+
+        BookRequest req = admServ.findRequestById(reqData.getId());
+        req.setDateTill(reqData.getDateTill());
+        admServ.saveRequest(req);
 
         return ResponseEntity.noContent().build();
     }
